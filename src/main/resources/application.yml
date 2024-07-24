@@ -1,0 +1,7 @@
+server:
+  port: 9091
+
+spring:
+  thymeleaf:
+    prefix: classpath:/templates/
+    suffix: .html

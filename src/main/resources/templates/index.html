@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>드롭다운 및 입력 폼</title>
+    <link rel="stylesheet" href="/css/styles.css"> <!-- CSS 파일 링크 -->
+</head>
+<body>
+<div class="main">
+    <div class="container">
+        <h1>자유적금 계좌 확인</h1>
+        <div class="form-container">
+            <select id="dropdown">
+                <option value="SC">SC</option>
+                <option value="경남">경남</option>
+                <option value="광주">광주</option>
+                <option value="국민">국민</option>
+                <option value="기업">기업</option>
+                <option value="농협">농협</option>
+                <option value="대구">대구</option>
+                <option value="부산">부산</option>
+                <option value="산업">산업</option>
+                <option value="수협">수협</option>
+                <option value="신한">신한</option>
+                <option value="씨티">씨티</option>
+                <option value="우리">우리</option>
+                <option value="전북">전북</option>
+                <option value="제주">제주</option>
+                <option value="카카오">카카오</option>
+                <option value="케이">케이</option>
+                <option value="토스">토스</option>
+                <option value="하나">하나</option>
+            </select>
+            <input type="text" id="userInput" placeholder="여기에 입력하세요">
+            <button id="submitButton">제출</button>
+            <div class="note-container">
+                <div class="note">
+                    자유적금계좌 악용 사기 거래 근절 및 피해 예방을 위해 만든 사이트입니다.
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="footer">
+    중고거래 시 꼭 확인하고 거래하세요. 자유적금계좌를 확인해야 하는 자세한 이유는
+    <a href="https://m.blog.naver.com/fss2009/223402293345" target="_blank">금융감독원 블로그</a>에서 참고하세요.
+</div>
+
+<!-- 모달 -->
+<div id="responseModal" class="modal">
+    <div class="modal-content">
+        <div class="modal-header">
+            <span class="close">&times;</span>
+            결과
+        </div>
+        <div class="modal-body" id="modalBody">
+            <!-- 응답 메시지가 여기에 표시됩니다. -->
+        </div>
+        <div class="modal-footer">
+            <button id="closeButton">닫기</button>
+        </div>
+    </div>
+</div>
+
+<script src="/js/script.js"></script>
+</body>
+</html>
